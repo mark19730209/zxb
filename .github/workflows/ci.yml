@@ -16,9 +16,10 @@ jobs:
 
     # ==================== 1. 后端 PHP 环境配置 ====================
     - name: Setup PHP
-      uses: actions/setup-php@v2
+      # 关键修正：从 actions/setup-php 变更为社区标准的 shivammathur/setup-php
+      uses: shivammathur/setup-php@v2 
       with:
-        php-version: '8.4' # 与您本地 Laravel Herd 严格一致
+        php-version: '8.4' # 严格锁定与本地一致的 8.4 版本
         extensions: mbstring, dom, fileinfo, gd, zip
         coverage: none
 
@@ -33,12 +34,11 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '20' # 使用当前主流且稳定的 Node 20 LTS 版本
-        cache: 'npm'       # 开启 npm 缓存加速后续构建速度
+        node-version: '20' 
+        cache: 'npm'       
 
     - name: Install Node Dependencies
-      run: npm ci          # 相比 npm install，npm ci 专门用于 CI 环境，严格基于 package-lock.json 安装
+      run: npm ci          
 
     - name: Compile Frontend Assets (Vite)
-      # 验证 Vite 编译以及 Vue 3 + TypeScript 代码有没有硬性语法报错
       run: npm run build
