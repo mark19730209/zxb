@@ -1,0 +1,16 @@
+{
+    "dejavu sans": {
+        "bold": "\/Users\/mark\/Herd\/zxb\/vendor\/dompdf\/dompdf\/lib\/fonts\/DejaVuSans-Bold",
+        "bold_italic": "\/Users\/mark\/Herd\/zxb\/vendor\/dompdf\/dompdf\/lib\/fonts\/DejaVuSans-BoldOblique",
+        "italic": "\/Users\/mark\/Herd\/zxb\/vendor\/dompdf\/dompdf\/lib\/fonts\/DejaVuSans-Oblique",
+        "normal": "dejavu_sans_normal_d3fba27f25d5093210e8187f3a5c1c18"
+    },
+    "dejavusans": {
+        "normal": "\/Users\/mark\/Herd\/zxb\/storage\/fonts\/dejavusans_normal_d3fba27f25d5093210e8187f3a5c1c18",
+        "bold": "dejavusans_bold_97de5642d456fbbb83e9836bb68d1463"
+    },
+    "hyqh": {
+        "normal": "\/Users\/mark\/Herd\/zxb\/storage\/fonts\/hyqh_normal_6e8b390551c4b2cfadc4a6a18e914da6",
+        "bold": "hyqh_bold_6e8b390551c4b2cfadc4a6a18e914da6"
+    }
+}
